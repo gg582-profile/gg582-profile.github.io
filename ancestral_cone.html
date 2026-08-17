@@ -41,26 +41,6 @@
             align-items: center;
             gap: 0.5rem;
         }
-        .header-buttons {
-            display: flex;
-            gap: 0.8rem;
-            align-items: center;
-        }
-        #countrySelect {
-            background: #1e293b;
-            border: 1px solid #334155;
-            color: #f8fafc;
-            padding: 0.45rem 0.9rem;
-            border-radius: 0.3rem;
-            font-size: 0.8rem;
-            cursor: pointer;
-            outline: none;
-            max-width: 200px;
-            transition: border-color 0.2s;
-        }
-        #countrySelect:hover {
-            border-color: #475569;
-        }
         #globeViz {
             flex: 1;
             width: 100vw;
@@ -118,19 +98,6 @@
             border-bottom: 1px solid #334155;
             padding-bottom: 0.3rem;
         }
-        .btn {
-            background-color: #2563eb;
-            color: white;
-            border: none;
-            padding: 0.45rem 0.9rem;
-            border-radius: 0.3rem;
-            font-size: 0.8rem;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-        .btn:hover {
-            background-color: #1d4ed8;
-        }
         .country-flag {
             display: inline-block;
             background: #1e3a8a;
@@ -164,27 +131,8 @@
                 align-items: flex-start;
                 gap: 0.5rem;
             }
-            .header-buttons {
-                width: 100%;
-                gap: 0.5rem !important;
-                overflow-x: auto;
-                white-space: nowrap;
-                -webkit-overflow-scrolling: touch;
-                padding-bottom: 4px;
-            }
-            .header-buttons::-webkit-scrollbar {
-                display: none;
-            }
             h1 {
                 font-size: 1.1rem;
-            }
-            .btn, #countrySelect {
-                padding: 0.35rem 0.7rem;
-                font-size: 0.75rem;
-                flex-shrink: 0;
-            }
-            #countrySelect {
-                max-width: 150px;
             }
             #sidebar {
                 position: fixed;
@@ -277,12 +225,6 @@
     <header>
         <div>
             <h1>취향 맥락 지형도</h1>
-        </div>
-        <div class="header-buttons">
-            <select id="countrySelect" onchange="onCountrySelectChange(this.value)">
-                <option value="">🗺️ 국가 바로가기...</option>
-            </select>
-            <button class="btn" style="background:#475569;" onclick="resetCamera()">🌍 지구본 전체 리셋</button>
         </div>
     </header>
 
@@ -398,27 +340,6 @@
                 const chevron = document.querySelector('.handle-chevron');
                 if (chevron) chevron.textContent = '▼';
             }
-
-            // Sync the dropdown select value!
-            const select = document.getElementById('countrySelect');
-            if (select) {
-                select.value = d.country_code || "";
-            }
-        }
-
-        function rotateToCountry(code) {
-            world.controls().autoRotate = false;
-            const target = gData.find(d => d.country_code === code);
-            if (target) {
-                selectCountry(target);
-            }
-        }
-
-        function resetCamera() {
-            world.controls().autoRotate = true;
-            world.pointOfView({ lat: 20.0, lng: 0.0, altitude: 2.5 }, 1500);
-            const select = document.getElementById('countrySelect');
-            if (select) select.value = "";
         }
 
         function toggleSidebar(e) {
@@ -448,68 +369,6 @@
                 world.height(container.clientHeight);
             }
         }, 100);
-
-        // Dynamically populate active countries in dropdown on load
-        function initCountryDropdown() {
-            const select = document.getElementById('countrySelect');
-            if (!select) return;
-
-            select.innerHTML = '<option value="">🗺️ 국가 바로가기...</option>';
-
-            const country3to2 = {
-                'KOR': 'KR', 'FRA': 'FR', 'RUS': 'RU', 'GBR': 'GB', 'JPN': 'JP',
-                'USA': 'US', 'ETH': 'ET', 'KHM': 'KH', 'MLI': 'ML', 'PRI': 'PR',
-                'BRA': 'BR', 'ESP': 'ES', 'MNG': 'MN', 'PAK': 'PK', 'GRL': 'GL',
-                'IRQ': 'IQ', 'IND': 'IN', 'IDN': 'ID', 'VNM': 'VN', 'ZWE': 'ZW',
-                'COL': 'CO'
-            };
-
-            function getFlagEmoji(code3) {
-                const code2 = country3to2[code3];
-                if (!code2) return "📌";
-                const codePoints = code2.toUpperCase()
-                    .split('')
-                    .map(char => 127397 + char.charCodeAt(0));
-                try {
-                    return String.fromCodePoint(...codePoints);
-                } catch (e) {
-                    return "📌";
-                }
-            }
-
-            // Get unique active countries from gData
-            const activeNodes = gData.filter(d => d.raw.active && d.country_code);
-            const uniqueMap = new Map();
-            activeNodes.forEach(n => {
-                if (!uniqueMap.has(n.country_code)) {
-                    uniqueMap.set(n.country_code, n);
-                }
-            });
-
-            const uniqueActiveNodes = Array.from(uniqueMap.values());
-            // Sort KOR first, then others alphabetically
-            uniqueActiveNodes.sort((a, b) => {
-                if (a.country_code === 'KOR') return -1;
-                if (b.country_code === 'KOR') return 1;
-                return a.raw.label.localeCompare(b.raw.label);
-            });
-
-            uniqueActiveNodes.forEach(node => {
-                const opt = document.createElement('option');
-                opt.value = node.country_code;
-                const emoji = getFlagEmoji(node.country_code);
-                opt.textContent = `${emoji} ${node.raw.label}`;
-                select.appendChild(opt);
-            });
-        }
-
-        function onCountrySelectChange(code) {
-            if (!code) return;
-            rotateToCountry(code);
-        }
-
-        // Run dropdown initialization
-        initCountryDropdown();
     </script>
 
     
