@@ -354,13 +354,103 @@
 
             if (n.details && n.details.length > 0) {
                 html += `<div style="font-weight:bold; color:#f1f5f9; border-bottom:1px solid #334155; padding-bottom:0.3rem;">소비 기록</div>`;
-                html += `<ul class="detail-list">`;
-                n.details.forEach(item => {
-                    if (item && item.trim()) {
+                
+                if (n.country_code === 'KOR') {
+                    const foreignKeywords = [
+                        // Russia
+                        'Посев', 'Егор', 'Гражданская Оборона', 'Группа ДК', 'Янка', 'Летов', 'Я иллюзорен', 'Мы — лёд', 'Letov', 'Neumoev', 'Selivanov', 'Yanka', 'Некрофилия', 'плану', 'Кузя', 'Некрофилия', 'Промышленная', 'Привыкать', 'Раздражение', 'войны', 'Рижская', 'Опизденевшие', 'Черный', 'Селиванов', 'Селиванова',
+                        // France
+                        'Alkan', 'Rameau', 'Couperin', 'Lully', 'Tapray', 'Prosseda', 'Gibbons', 'Scott Ross', 'Clavecin', 'Les Nations', 'Clavessin', 'Elis & Tom',
+                        // UK
+                        'Chaos UK', 'Blitz', 'The Business', 'Exploited', 'Kropotkin', '크로포트킨', 'Beatles', 'Sex Pistols', 'Pink Floyd', 'Adverts', 'Partisans', 'Sham 69', 'Adicts', 'GBH', 'Pinnock', 'Anarchy', 'NO FEELINGS', 'The Velvet Underground', 'Purcell', 'Abdelzer', 'Josquin', 'Sgt Pepper', 'Sixty Four',
+                        // USA
+                        'Blind Blake', 'Misfits', 'Suzi Quatro', 'Bo Carter', 'Sun Ra', 'John Lee Hooker', 'Herbie Hancock', 'The Runaways', 'Joan Jett', 'Lead Belly', 'A Tribe Called Quest', 'Son House', 'Marvin Gaye', 'Otis Redding', 'Redman', 'Artifacts', 'Tupac', 'K&R C', 'POSIX', 'KS10', 'PDP-10', 'KL10', 'DEC', 'Lars Brinkhoff', 'Jimmy "Duck" Holmes', 'THE HOODZ', 'Big Joe Krash', 'Henry Thomas', 'Willie Brown', 'Fuller', 'Bukka White', 'Elmore James', 'Otis', 'Someone to Watch Over Me', 'Art Tatum', 'Creole', 'The Chocolate Watchband', 'The Pleasure Seekers', 'MMW', 'Chubb Sub', 'KS10', 'PDP-10', 'KL10', 'DEC', 'Lars', 'Winicumuhround', 'Krash', 'Stormy Weather', 'ROGERS', 'Lateef', 'Spartacus', 'Madlib', 'DOOM', 'KRS-One', 'Robert Petway', 'Germs', 'Runaways', 'Rapp', 'Suzi', 'Otis', 'Sykes', 'Lomax Film', 'Sykes', 'Broonzy', 'Savage', 'Cao Xiu',
+                        // Japan
+                        'Nujabes', 'Shing02', 'Ryukyu', 'Sanshin', 'Kadekaru', 'Toshin Doi', 'Nakuni', 'Asadoya', 'Tinsagu', 'Eisa', 'Uyama Hiroto', 'Buddha Brand', '人間発電所', 'Noriaki', 'Don Quijote', '杏里', 'Anri', 'Wasureranneyo', 'Nannmonee', 'Ryukyu', 'Eisa', '天道流', '야니네코', 'Noriaki', '서티원', '오토코노코',
+                        // Brazil
+                        'Jobim', 'João Gilberto', 'Bossa Nova', 'Ipanema', 'Desafinado', 'Saudade', 'Samba', 'Villa-Lobos', 'vals', 'vals', 'Antonio Carlos Jobim',
+                        // Spain
+                        'Recuerdos de la Alhambra', 'Capricho Árbe', 'Gran Vals', 'Lágrima', 'Alan Lomax 1952 Spain', 'Tárrega', 'Alhambra', 'Tárrega',
+                        // Mongolia
+                        'Huun-Huur-Tu', 'Alash', '흐미', '마두금', 'Arhi', '마유주',
+                        // Mali
+                        'Toumani Diabaté', 'Ballaké Sissoko', 'Tinariwen', 'Diabaté', 'Sissoko',
+                        // Cambodia
+                        'Sinn Sisamouth', 'Ros Serey Sothea', 'Sisamouth', 'Serey', 'Sothea',
+                        // Puerto Rico
+                        'Willie Colón', 'Héctor Lavoe', 'Frankie Ruíz', 'Colón', 'Lavoe', 'Ruíz',
+                        // Iraq
+                        'Oud', 'Bashir', 'Shamma',
+                        // India
+                        'Ravi Shankar', 'Raga', 'Sitar', 'Hindustani',
+                        // Indonesia
+                        'Gamelan', 'Kebyar', 'Ladrang', 'Sekaten',
+                        // Vietnam
+                        'Nhạc Huế', 'Nhã Nhạc', '후에 궁정 아악', '베트남 현지화 체계',
+                        // Zimbabwe
+                        'Mbira', 'Shona', 'Zimbabwean'
+                    ];
+
+                    const isForeign = item => {
+                        return foreignKeywords.some(keyword => item.toLowerCase().includes(keyword.toLowerCase()));
+                    };
+
+                    const isCoreKorean = item => {
+                        if (item.startsWith('https://oborona.zip')) return true;
+                        const coreKeywords = [
+                            '민요', '풍물', '최석정', '구수략', '남도민요', '경기민요', '서도민요',
+                            '장단', '굿거리', '자진모리', '휘모리', '칠채', '육자배기', '흥타령', '창부타령', '수심가',
+                            '발해', '학창 시절 동아리', 'IT 블로그', '시스템 설계/네트워크'
+                        ];
+                        return coreKeywords.some(keyword => item.includes(keyword));
+                    };
+
+                    const koreaPure = [];
+                    const newsDrawer = [];
+
+                    n.details.forEach(item => {
+                        if (!item || !item.trim()) return;
+                        if (isForeign(item)) return;
+
+                        if (isCoreKorean(item)) {
+                            koreaPure.push(item);
+                        } else {
+                            newsDrawer.push(item);
+                        }
+                    });
+
+                    html += `<ul class="detail-list">`;
+                    koreaPure.forEach(item => {
                         html += `<li>\${item}</li>`;
+                    });
+                    html += `</ul>`;
+
+                    if (newsDrawer.length > 0) {
+                        html += `
+                        <details id="academicDrawer" style="margin-top: 1rem; background: rgba(30, 41, 59, 0.4); border: 1px solid #334155; border-radius: 0.5rem; padding: 0.6rem 0.8rem;" ontoggle="onDrawerToggle(this)">
+                            <summary style="cursor: pointer; font-weight: bold; color: #38bdf8; font-size: 0.82rem; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center; user-select: none;">
+                                <span>📁 학문 분류 및 기타 시사 자료 (터치하여 열기)</span>
+                                <span class="drawer-arrow" style="font-size: 0.75rem; color: #94a3b8; transition: transform 0.2s;">▲</span>
+                            </summary>
+                            <ul class="detail-list" style="margin-top: 0.6rem; max-height: 250px; overflow-y: auto; list-style-type: none; padding-left: 0;">
+                        `;
+                        newsDrawer.forEach(item => {
+                            html += `<li>\${item}</li>`;
+                        });
+                        html += `
+                            </ul>
+                        </details>
+                        `;
                     }
-                });
-                html += `</ul>`;
+                } else {
+                    html += `<ul class="detail-list">`;
+                    n.details.forEach(item => {
+                        if (item && item.trim()) {
+                            html += `<li>\${item}</li>`;
+                        }
+                    });
+                    html += `</ul>`;
+                }
             } else if (!n.active) {
                 html += `<div style="background:#0f172a; border:1px solid #334155; padding:0.6rem; border-radius:0.3rem; color:#94a3b8; font-size:0.82rem;">`;
                 html += `소비 기록 없음`;
@@ -375,6 +465,17 @@
                 sidebar.classList.add("open");
                 const chevron = document.querySelector('.handle-chevron');
                 if (chevron) chevron.textContent = '▼';
+            }
+        }
+
+        function onDrawerToggle(el) {
+            const arrow = el.querySelector('.drawer-arrow');
+            if (arrow) {
+                arrow.textContent = el.open ? '▼' : '▲';
+            }
+            const span = el.querySelector('summary > span');
+            if (span) {
+                span.textContent = el.open ? '📁 학문 분류 및 기타 시사 자료' : '📁 학문 분류 및 기타 시사 자료 (터치하여 열기)';
             }
         }
 
