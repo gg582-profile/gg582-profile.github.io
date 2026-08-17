@@ -3914,11 +3914,13 @@
     },
     {
       "id": "CTRY_IND_LOGS",
+      "label": "인도 (India) - 북인도 힌두스타니 클래식 시타르 (라비 샹카르)",
       "country": "인도 (India)",
       "country_code": "IND",
       "lat": 28.6,
       "lng": 77.2,
       "active": true,
+      "desc": "북인도 힌두스타니 클래식 Sitar 연주 및 라비 샹카르(Ravi Shankar) 명연주 아카이브",
       "details": [
         "Ravi Shankar - Raga Monterey Pop Festival (1967)",
         "Ravi Shankar - Raga Hamsadhwani",
@@ -3928,11 +3930,13 @@
     },
     {
       "id": "CTRY_IDN_LOGS",
+      "label": "인도네시아 (Indonesia) - 자바 & 발리 전통 타악 합주 가멜란 (Gamelan)",
       "country": "인도네시아 (Indonesia)",
       "country_code": "IDN",
       "lat": -7.7,
       "lng": 110.3,
       "active": true,
+      "desc": "자바 궁정 가멜란 및 발리 전통 청동 타악 합주 가멜란(Gamelan) 연주 기록",
       "details": [
         "Javanese Court Gamelan - Ladrang Wilujeng",
         "Javanese Gamelan Gong Kebyar Percussion Performance",
@@ -3941,11 +3945,13 @@
     },
     {
       "id": "CTRY_VNM_LOGS",
+      "label": "베트남 (Vietnam) - 후에 궁정 아악 냐낙 (Nhã Nhạc / 후에 아악)",
       "country": "베트남 (Vietnam)",
       "country_code": "VNM",
       "lat": 16.4,
       "lng": 107.5,
       "active": true,
+      "desc": "베트남 후에 왕조의 전통 궁정 음악인 냐낙(Nhã Nhạc) 및 아악 현지화 체계 연주 기록",
       "details": [
         "Nhạc Huế (후에 궁정 아악) - 명청대 아악 도입 후 베트남 현지화 체계",
         "Nhã Nhạc Royal Court Music Ensembles"
