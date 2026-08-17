@@ -46,6 +46,21 @@
             gap: 0.8rem;
             align-items: center;
         }
+        #countrySelect {
+            background: #1e293b;
+            border: 1px solid #334155;
+            color: #f8fafc;
+            padding: 0.45rem 0.9rem;
+            border-radius: 0.3rem;
+            font-size: 0.8rem;
+            cursor: pointer;
+            outline: none;
+            max-width: 200px;
+            transition: border-color 0.2s;
+        }
+        #countrySelect:hover {
+            border-color: #475569;
+        }
         #globeViz {
             flex: 1;
             width: 100vw;
@@ -163,10 +178,13 @@
             h1 {
                 font-size: 1.1rem;
             }
-            .btn {
+            .btn, #countrySelect {
                 padding: 0.35rem 0.7rem;
                 font-size: 0.75rem;
                 flex-shrink: 0;
+            }
+            #countrySelect {
+                max-width: 150px;
             }
             #sidebar {
                 position: fixed;
@@ -261,8 +279,9 @@
             <h1>취향 맥락 지형도</h1>
         </div>
         <div class="header-buttons">
-            <button class="btn" onclick="rotateToCountry('KOR')">🇰🇷 대한민국 (Korea)</button>
-            <button class="btn" onclick="rotateToCountry('ETH')">🇪🇹 에티오피아 (Ethiopia)</button>
+            <select id="countrySelect" onchange="onCountrySelectChange(this.value)">
+                <option value="">🗺️ 국가 바로가기...</option>
+            </select>
             <button class="btn" style="background:#475569;" onclick="resetCamera()">🌍 지구본 전체 리셋</button>
         </div>
     </header>
@@ -340,55 +359,66 @@
             .pointResolution(32)
             .pointLabel(d => `<div style="background:#0f172a; color:#f8fafc; padding:0.4rem 0.7rem; border-radius:0.3rem; border:1px solid #334155; font-size:0.85rem;"><b>${d.raw.label}</b></div>`)
             .onPointClick(d => {
-                world.pointOfView({ lat: d.lat, lng: d.lng, altitude: 1.7 }, 1200);
-
-                const n = d.raw;
-                let html = `<div style="font-size:1.05rem; font-weight:bold; color:${n.active ? '#38bdf8' : '#94a3b8'}">${n.label}</div>`;
-                html += `<div style="margin-top:0.3rem;"><span class="country-flag">📌 ${n.country || n.geo} [${n.country_code || 'INT'}]</span></div><br/>`;
-                html += `<b>역사/문화 개요:</b> ${n.desc}<br/><br/>`;
-
-                if (n.details && n.details.length > 0) {
-                    html += `<div style="font-weight:bold; color:#f1f5f9; border-bottom:1px solid #334155; padding-bottom:0.3rem;">소비 기록</div>`;
-                    html += `<ul class="detail-list">`;
-                    n.details.forEach(item => {
-                        if (item && item.trim()) {
-                            html += `<li>${item}</li>`;
-                        }
-                    });
-                    html += `</ul>`;
-                } else if (!n.active) {
-                    html += `<div style="background:#0f172a; border:1px solid #334155; padding:0.6rem; border-radius:0.3rem; color:#94a3b8; font-size:0.82rem;">`;
-                    html += `소비 기록 없음`;
-                    html += `</div>`;
-
-                }
-
-                document.getElementById("node-detail").innerHTML = html;
-
-                // Automatically open sidebar drawer on mobile when a node is clicked
-                const sidebar = document.getElementById("sidebar");
-                if (sidebar && !sidebar.classList.contains("open")) {
-                    sidebar.classList.add("open");
-                    const chevron = document.querySelector('.handle-chevron');
-                    if (chevron) chevron.textContent = '▼';
-                }
+                selectCountry(d);
             });
 
         world.controls().autoRotate = true;
         world.controls().autoRotateSpeed = 0.4;
         world.pointOfView({ lat: 37.5, lng: 127.0, altitude: 2.2 });
 
+        function selectCountry(d) {
+            world.pointOfView({ lat: d.lat, lng: d.lng, altitude: 1.7 }, 1200);
+
+            const n = d.raw;
+            let html = `<div style="font-size:1.05rem; font-weight:bold; color:${n.active ? '#38bdf8' : '#94a3b8'}">${n.label}</div>`;
+            html += `<div style="margin-top:0.3rem;"><span class="country-flag">📌 ${n.country || n.geo} [${n.country_code || 'INT'}]</span></div><br/>`;
+            html += `<b>역사/문화 개요:</b> ${n.desc}<br/><br/>`;
+
+            if (n.details && n.details.length > 0) {
+                html += `<div style="font-weight:bold; color:#f1f5f9; border-bottom:1px solid #334155; padding-bottom:0.3rem;">소비 기록</div>`;
+                html += `<ul class="detail-list">`;
+                n.details.forEach(item => {
+                    if (item && item.trim()) {
+                        html += `<li>${item}</li>`;
+                    }
+                });
+                html += `</ul>`;
+            } else if (!n.active) {
+                html += `<div style="background:#0f172a; border:1px solid #334155; padding:0.6rem; border-radius:0.3rem; color:#94a3b8; font-size:0.82rem;">`;
+                html += `소비 기록 없음`;
+                html += `</div>`;
+            }
+
+            document.getElementById("node-detail").innerHTML = html;
+
+            // Automatically open sidebar drawer on mobile when a node is selected
+            const sidebar = document.getElementById("sidebar");
+            if (sidebar && !sidebar.classList.contains("open")) {
+                sidebar.classList.add("open");
+                const chevron = document.querySelector('.handle-chevron');
+                if (chevron) chevron.textContent = '▼';
+            }
+
+            // Sync the dropdown select value!
+            const select = document.getElementById('countrySelect');
+            if (select) {
+                select.value = d.country_code || "";
+            }
+        }
+
         function rotateToCountry(code) {
             world.controls().autoRotate = false;
             const target = gData.find(d => d.country_code === code);
             if (target) {
-                world.pointOfView({ lat: target.lat, lng: target.lng, altitude: 1.7 }, 1500);
+                selectCountry(target);
             }
         }
 
         function resetCamera() {
             world.controls().autoRotate = true;
             world.pointOfView({ lat: 20.0, lng: 0.0, altitude: 2.5 }, 1500);
+            const select = document.getElementById('countrySelect');
+            if (select) select.value = "";
         }
 
         function toggleSidebar(e) {
@@ -418,6 +448,68 @@
                 world.height(container.clientHeight);
             }
         }, 100);
+
+        // Dynamically populate active countries in dropdown on load
+        function initCountryDropdown() {
+            const select = document.getElementById('countrySelect');
+            if (!select) return;
+
+            select.innerHTML = '<option value="">🗺️ 국가 바로가기...</option>';
+
+            const country3to2 = {
+                'KOR': 'KR', 'FRA': 'FR', 'RUS': 'RU', 'GBR': 'GB', 'JPN': 'JP',
+                'USA': 'US', 'ETH': 'ET', 'KHM': 'KH', 'MLI': 'ML', 'PRI': 'PR',
+                'BRA': 'BR', 'ESP': 'ES', 'MNG': 'MN', 'PAK': 'PK', 'GRL': 'GL',
+                'IRQ': 'IQ', 'IND': 'IN', 'IDN': 'ID', 'VNM': 'VN', 'ZWE': 'ZW',
+                'COL': 'CO'
+            };
+
+            function getFlagEmoji(code3) {
+                const code2 = country3to2[code3];
+                if (!code2) return "📌";
+                const codePoints = code2.toUpperCase()
+                    .split('')
+                    .map(char => 127397 + char.charCodeAt(0));
+                try {
+                    return String.fromCodePoint(...codePoints);
+                } catch (e) {
+                    return "📌";
+                }
+            }
+
+            // Get unique active countries from gData
+            const activeNodes = gData.filter(d => d.raw.active && d.country_code);
+            const uniqueMap = new Map();
+            activeNodes.forEach(n => {
+                if (!uniqueMap.has(n.country_code)) {
+                    uniqueMap.set(n.country_code, n);
+                }
+            });
+
+            const uniqueActiveNodes = Array.from(uniqueMap.values());
+            // Sort KOR first, then others alphabetically
+            uniqueActiveNodes.sort((a, b) => {
+                if (a.country_code === 'KOR') return -1;
+                if (b.country_code === 'KOR') return 1;
+                return a.raw.label.localeCompare(b.raw.label);
+            });
+
+            uniqueActiveNodes.forEach(node => {
+                const opt = document.createElement('option');
+                opt.value = node.country_code;
+                const emoji = getFlagEmoji(node.country_code);
+                opt.textContent = `${emoji} ${node.raw.label}`;
+                select.appendChild(opt);
+            });
+        }
+
+        function onCountrySelectChange(code) {
+            if (!code) return;
+            rotateToCountry(code);
+        }
+
+        // Run dropdown initialization
+        initCountryDropdown();
     </script>
 
     
