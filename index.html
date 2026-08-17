@@ -384,22 +384,22 @@
             <h2 style="margin-top: 0; color: #38bdf8; font-size: 18px;">📊 사용자 소비 패턴 및 작성물 분석 요약</h2>
             <hr style="border-color: rgba(255,255,255,0.1); margin: 16px 0;">
             
-            <h3 style="color: #60a5fa; font-size: 15px;">1. 중심적 사고 및 기술관 (System & Verification)</h3>
+            <h3 style="color: #60a5fa; font-size: 15px;">1. 기술 중심의 사고와 직접 검증 (System & Verification)</h3>
             <p style="font-size: 13px; line-height: 1.6; color: #cbd5e1; margin-bottom: 12px;">
-                • <strong>기층 우선주의 및 직접 검증</strong>: 최신 프레임워크나 라이브러리를 단순히 도입하기보다 CWIST(C 언어 기반 io_uring 비동기 웹 엔진), libttak 등 직접 시스템 기층을 구축하고, 그 신뢰성과 성능을 Axum 등과 직접 벤치마크(RPS, Latency, RSS) 비교하여 엄밀하게 검증하고 반증하는 개발 패턴을 보입니다.<br>
-                • <strong>실행성과 통제성 지향</strong>: C 언어, Linux 환경, self-hosting, on-premise 및 오픈소스를 지향하는 것은 이들이 단순한 도구가 아니라 검증 가능한 경계와 완전히 제어 가능한 실행 시스템을 보장하기 때문입니다.
+                • <strong>밑바닥(로우 레벨) 직접 구현</strong>: 남들이 만든 최신 프레임워크나 라이브러리를 무작정 가져다 쓰기보다, CWIST(C 언어 기반 io_uring 비동기 웹 엔진)나 libttak처럼 시스템 밑바닥부터 직접 만들어 씁니다. 그렇게 만든 결과물의 안정성과 성능을 기존 도구(Axum 등)와 직접 벤치마크(RPS, 응답 속도, 메모리 사용량) 비교해가며 정량적으로 꼼꼼하게 검증합니다.<br>
+                • <strong>자기 통제와 독립적인 환경 지향</strong>: C 언어, 리눅스(Linux) 환경, 셀프 호스팅, 온프레미스(자체 서버 구동) 및 오픈소스를 고집하는 것은, 외부 서비스에 의존하지 않고 내 시스템의 전 과정을 내 손으로 직접 제어하고 확실하게 신뢰할 수 있는 환경을 만들고 싶어하기 때문입니다.
             </p>
 
-            <h3 style="color: #38bdf8; font-size: 15px;">2. 지식 및 전통 탐구 방식 (Genealogy & Reconstruction)</h3>
+            <h3 style="color: #38bdf8; font-size: 15px;">2. 탐구 방식과 구조적 이해 (System & Structure)</h3>
             <p style="font-size: 13px; line-height: 1.6; color: #cbd5e1; margin-bottom: 12px;">
-                • <strong>전통의 현재적 재가동</strong>: 조선 산학 《구수략》, 최석정의 라틴방진, 주판/산목, 고악기와 바로크 대위법 등을 박물관에 박제된 유물로 보기보다는 '현재에도 설계하고 동작 가능한 실행형 프로토콜'로 취급합니다. Z3, SageMath, NetworkX 등으로 알고리즘을 계산/검증하며 C++ 및 Python 코드로 연동하여 기층 기술로 재해석합니다.<br>
-                • <strong>계보형 지식 구조</strong>: 개별 데이터나 곡 단위 소비에 그치지 않고 역사적 계보, 장르 씬(Scene), 초기 데모/원형, 시대적 맥락, 타 지역 대응물까지 연쇄 추적하여 부모-자식-변형-분기-재결합 관계를 보존하는 다차원 그래프 형태로 지식을 이해합니다.
+                • <strong>과거 기술의 현재적 구동</strong>: 조선 산학 《구수략》, 최석정의 라틴방진, 전통 산목 계산법, 옛 악기와 대위법 등을 박물관의 박제된 기록이 아니라 '지금 당장 설계하고 코드로 구동할 수 있는 시스템'으로 다룹니다. Z3, SageMath, NetworkX 같은 도구를 사용해 알고리즘을 확인하고 C++/파이썬 코드로 실제 동작하게 구현해냅니다.<br>
+                • <strong>흐름과 맥락 파악</strong>: 하나의 단편적인 코드나 개별 곡 소비에 그치지 않고, 기술의 변천사와 뿌리(장르 씬, 초기 원형, 시대 배경)를 연쇄적으로 추적하여 전체 지형도와 인과관계를 명확하게 파악하는 직관적인 계보형 탐구 방식을 보입니다.
             </p>
 
-            <h3 style="color: #a78bfa; font-size: 15px;">3. 학술적 일관성 및 가치관 (Tone & Philosophy)</h3>
+            <h3 style="color: #a78bfa; font-size: 15px;">3. 가치관과 기록 방식 (Tone & Philosophy)</h3>
             <p style="font-size: 13px; line-height: 1.6; color: #cbd5e1;">
-                • <strong>엄밀성과 반형식주의</strong>: 계산 비약이나 정의 생략을 강하게 거부하는 수학적 엄밀성을 추구하지만, 실속 없이 권위적인 문체나 표면적으로 정갈하게 꾸민 겉치레, 형식의 단순 모방은 단호히 배제합니다.<br>
-                • <strong>개인의 자율성과 권력의 정당성</strong>: 바쿠닌, 크로포트킨 《빵의 정복》과 같은 아나키즘 사상, Magnitizdat(소련 지하 자가복제 복제망) 등의 역사적 우회 통로, 검열과 매체, 국가 폭력과 정당화 메커니즘에 대해 학술적이고도 실증적인 기술 분석을 시도합니다.
+                • <strong>실용성과 명확성 중심</strong>: 알맹이 없이 권위적이고 현학적인 문체나, 겉으로만 번지르르하게 정갈하게 꾸민 형식의 답습은 철저히 배제합니다. 본질적인 작동 원리와 알맹이를 꼼꼼하게 기록하는 실용주의적 자세를 지향합니다.<br>
+                • <strong>자율성과 통제권</strong>: 바쿠닌, 크로포트킨 《빵의 정복》과 같은 아나키즘 사상이나 소련의 소수 매체 자가 복제 배포망(Magnitizdat)의 역사적 우회 기술 경로를 탐구하며, 외부의 통제나 간섭 없이 개인이 자원하고 기술을 직접 소유하여 자율적으로 제어하는 구조에 깊은 관심을 보입니다.
             </p>
         </div>
     </div>
