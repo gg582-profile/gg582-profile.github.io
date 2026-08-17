@@ -1,0 +1,95 @@
+[
+  {
+    "url": "https://gg582.github.io/",
+    "title": "윤진의 IT 블로그",
+    "snippet": "Featured Documents 주요 문서 LU 분해를 산가지로 수행해 보자 계산수학과 이산구조 · 선형대수와 행렬 연산 중급 LU 분해를 산가지로 수행해 보자 가우스 소거와 기본행렬을 산가지 연산으로 따라가는 LU 분해 2026-08-01 유타 티팟 후속 - 전역 FXAA와 급격한 기하 꺾임의 국소 FXAA 계산수학과 이산구조 · 컴퓨터 그래픽스와 기하 처리 고급 유타 티팟 후속 - 전역 FXAA와 급격한 기하 꺾임의 국소 FXAA 표준 전역 FXAA와 주둥이 구멍·뚜껑 림만 분석하는 적응형 절충 모드 비교 2026-07-24 유타 티팟을 X11 소프트웨어 렌더러로 그리기 - 패치 용접, 국소 곡률 보정, 점광원 계산수학과 이산구조 · 컴퓨터 그래픽스와 기하 처리 고급 유타 티팟을 X11 소프트웨어 렌더러로 그리기 - 패치 용접, 국소 곡률 보정, 점광원 난수 노이즈를 없애고, 분리된 Bezier 패치를 전역 메시로 연결한 기록 2026-07-24 Recent Updates 최근 업데이트 2026-08-01 계산수학과 이산구조 › 선형대수와 행렬 연산 LU 분해를 산가지로 수행해 보자 2026-07-24 계산수학과 이산구조 › 컴퓨터 그래픽스와 기하 처리 유타 티팟 후속 - 전역 FXAA와 급격한 기하 꺾임의 국소 FXAA 2026-07-24 계산수학과 이산구조 › 컴퓨터 그래픽스와 기하 처리 유타 티팟을 X11 소프트웨어 렌더러로 그리기 - 패치 용접, 국소 곡률 보정, 점광원 2026-07-23 계산수학과 이산구조 › 마방진과 격자 구조 산학 300년 전 수학자 최석정의 270칸 마법 헥사곤, 낙서육고도 복원기 2026-07-11 네트워크 기술 › 성능 최적화 왜 대형 CDN일수록 노드 증가에 따른 트래픽 증가를 이론적으로 예측하기 쉬운가 2026-05-26 네트워크 기술 › 프로토콜 연구 Error Logs From TFHost Nigeria 2026-05-13 종합 기술 › 시스템 설계 Fly.Board: 단순한 구현으로 C10k 문제를 처리하는 블로그 2026-04-21 종합 기술 › 시스템 설계 시리즈 SW프로세스 콘웨이의 법칙과 역콘웨이 법칙 2026-04-21 종합 기술 › 시스템 설계 시리즈 SW프로세스 애자일 방법론은 대체 뭘까 2026-04-21 종합 기술 › 시스템 설계 시리즈 SW프로세스 브룩스의 법칙 View All Documents → Knowledge Base Statistics 78 Total Documents 3 클라우드 컴퓨팅 9 네트워크 기술 6 임베디드 시스템 18 종합 기술 27 알고리즘 문제풀이 9 취미 생활 6 계산수학과 이산구조"
+  },
+  {
+    "url": "https://gg582.github.io/about",
+    "title": "About Me - 윤진의 IT 블로그",
+    "snippet": "이윤진 (Lee Yunjin) · @gg582 리눅스 시스템 프로그래밍, 고성능 네트워크 터널링, TUI, 미니멀 도구 개발을 중심으로 활동하는 오픈소스 개발자입니다. C와 Go를 주로 사용하며, 작은 도구도 운영 환경에서 예측 가능하고 안전하게 동작하도록 만드는 데 관심이 있습니다. 오픈소스 활동 Cubrid 멤버 — 엔터프라이즈 RDBMS 생태계와 오픈소스 데이터베이스 기술, 멀티 클라이언트 통합 환경을 분석합니다. Gosuda 멤버 — 경량 터미널 인프라와 고성능 네트워크 릴레이를 공동 유지·배포합니다. 주요 프로젝트 Portal · Self-hostable relay tunnel 포트 포워딩이나 방화벽 설정 없이 localhost 서비스를 외부에 공개하는 고성능 릴레이 터널입니다. 사용자 종단에서 TLS를 종료하는 E2E Tenant TLS·ECH, TLS Exporter 비교 기반의 MITM 탐지, 3개 이상 노드를 연결하는 멀티홉 익명 라우팅, Sui USDC 기반 x402 결제 게이트웨이를 제공합니다. CWIST · Pure C web development suite \"Flask for C\"를 목표로 하는 순수 C 웹 개발 스위트입니다. BoringSSL·OpenSSL·lsquic 기반의 다중 프로토콜 지원과 HTTP/3·WebTransport 세션 처리, X25519MLKEM768 하이브리드 키 교환을 강제할 수 있는 PQC TLS 구성, io_uring·epoll·kqueue 기반 zero-copy reactor를 연구·구현합니다. LibTTAK · Memory allocator & concurrency runtime 장기 실행 C 애플리케이션의 단편화와 allocator 경합을 줄이기 위한 결정론적 메모리 제어 프레임워크입니다. 세대 경계를 활용한 Generational Arena, 전역 정지 없이 동작하는 Epoch-Based Reclamation, task thread pool과 Future/Promise 비동기 프리미티브를 제공합니다. SSH-Chatter · SSH chat server & BBS terminal Go의 ssh-chat 에서 출발해 C로 포팅·확장한 현대적 SSH/Telnet BBS입니다. 게시판·RSS·ASCII art 명령을 갖춘 TUI, Gemini API 및 로컬 Ollama를 활용하는 유해 콘텐츠 필터링, Binkp 기반 아마추어 HAM 라디오 연동, 내부 Epoch GC를 포함합니다. Nanox · Minimal terminal text editor 고전 MicroEmacs(UEmacs)를 기반으로 현대 원격 환경에 맞게 리팩터링한 초경량 터미널 편집기입니다. 레거시 C 코드 모듈화, ncursesw 기반 UTF-8 및 다중 뷰 개선, $confirmshell · $makebackup 설정을 통한 쉘 실행 안전장치를 다룹니다. Gozik · GTK audio / CD player FFmpeg 기반의 미니멀 오디오 재생 데몬과 클라이언트입니다. 가벼운 Go 백엔드와 UI를 gRPC로 분리했으며, gozik-yt-music 같은 플러그인으로 외부 스트리밍 소스를 확장할 수 있습니다. 학력 및 실무 경험 2021–2022 · 대구대학교 MoNet — IoT·인프라 실험 및 연구 참여 2022–2023 · 대구대학교 RESL — RIOT OS 기반 실험 2023–2025 · 졸업 작품 IncuSpeed 개발 2025 · 정보처리산업기사 취득, 하나 소셜벤처 유니버시티 수료 2026.03.03–2026.06.02 · 메타빌드 인턴십 수료 메타빌드에서 Java 1.8 기반 Spring·MyBatis 레거시 시스템을 Spring Boot 4.x 아키텍처로 이전하는 작업, OpenJDK 1.6·1.8에서 21로의 호환성 분석, Excel VBA 로직의 Go·Next.js 현대화, Apache Tika와 PostgreSQL을 이용한 문서 추출·무결성 검증 파이프라인을 경험했습니다. 연구·학습 프로젝트 IncuSpeed — KivyMD Python GUI와 Go 보안 데몬으로 구성한 Incus 컨테이너 관리 도구 DevOpsPlayground — Ansible, Helm, Shell 기반 Kubernetes 재현 가능 인프라 템플릿 RemoteCarFromMonet — C·Go·Kubernetes로 구현한 분산 제어 기반 원격 차량 제어 시스템 RIOTOSMiniCarImplementation — 개미 주행 알고리즘을 모사한 RIOT OS 디바이스 드라이버 프로젝트 Raspberry Pi Raspbot — I2C와 핀 인터럽트 기반 초음파·모터 Linux 디바이스 드라이버 AvianRaptorNet — 조류 시각 경로에서 영감을 받은 PyTorch 초소형 이미지 분류기 ChoiCrypt — 최석정의 지수귀문도 수리적 셔플을 결합한 AES-256 변형 실험 도구 자격 및 수상 정보처리산업기사 (한국산업인력공단) 교내 IT공학대전 학생작품경진대회 수상 ETRI 2건, NRF 4건의 국가 연구개발 과제 연구보조원 참여 Contact Email: gg582@proton.me GitHub: @gg582"
+  },
+  {
+    "url": "https://gg582.github.io/posts",
+    "title": "Posts - 윤진의 IT 블로그",
+    "snippet": "총 9개의 게시물이 있습니다. 2026-05-13 Fly.Board: 단순한 구현으로 C10k 문제를 처리하는 블로그 C 기반 경량 블로그 엔진의 벤치마크와 설계 철학 2026-03-12 레거시 MyBatis -레거시 유지보수 MyBatis에서 위험한 구문들 레거시는 여전히 흔하고, 안전은 중요하다 2026-01-19 Apple M1 (aarch64) NEON SIMD 벤치마크 스위트 Asahi Linux 환경에서의 ARM NEON 성능 분석 2025-12-31 SQL 쿼리를 이용한 DB 검증 자동화 귀찮은 샘플링 작업을 쉽게 하자 2025-12-31 Vim은 정말 외골수들의 편집기일 뿐일까 Vim은 어디까지 튜닝할 수 있을까 2025-12-31 호기심천국-정말 쓰레드수만큼 작업을 두고 컴파일해야 할까 빌드 병렬화 최적 스레드 수 실험 2025-07-13 Incuspeed-Init레벨 가상화 컨테이너를 손쉽게 2025-05-09 DFS와 BFS의 시각적 차이 2025-03-28 gg582의 프로필 하략"
+  },
+  {
+    "url": "https://gg582.github.io/network",
+    "title": "Network - 윤진의 IT 블로그",
+    "snippet": "총 9개의 게시물이 있습니다. 2025-02-25 고부하 환경에서의 네트워크 분산: 최석정의 구수략 증명 기반 직교라틴방진 적용 직교라틴방진(Orthogonal Latin Squares)을 활용한 네트워크 트래픽 분산 최적화 2025-12-08 Refactoring Summary: Linux Kernel Jitter Patch From dst_entry bloat to struct dst_power abstraction 2025-12-08 비전공자도 쉽게 따라하는 리눅스 커널 해킹-지터를 잡아보자 네트워크 지터 개선을 위한 리눅스 커널 튜닝 2025-12-16 굴비와 예제로 공부해 보는 SOCKMAP과 스플라이싱 커널 수준 네트워크 최적화 기법 2025-12-23 BBRv1을 튜닝해서 지터를 더 줄여보자 TCP 혼잡제어 최적화를 통한 네트워크 성능 개선 2025-12-31 Easy Learning Series-SOCKMAP and Splicing Kernel-level Network Optimization Techniques 2026-01-15 Network Basics - How to Tune BBRv3 TCP BBRv3 Congestion Control Tuning Guide 2026-05-26 Error Logs From TFHost Nigeria DNS delegation failure and VPS reachability incident notes 2026-07-11 왜 대형 CDN일수록 노드 증가에 따른 트래픽 증가를 이론적으로 예측하기 쉬운가 이론적으로는 노드 증가에 따른 병목이 모두 동일하다고 가정한다."
+  },
+  {
+    "url": "https://gg582.github.io/devnote",
+    "title": "Devnote - 윤진의 IT 블로그",
+    "snippet": "총 13개의 게시물이 있습니다. 2026-01-26 Personal Software From AI Sketch to Usable Software 2026-03-04 다양한 개발론과 안목 차이 2026-04-18 구수략에서 나오는 재미있는 방진들-1강 2x2 방진 2026-04-18 구수략에서 언급하는 곱셈 검증 2026-04-20 시리즈 SW프로세스 폭포수 모델과 마거릿 해밀턴 2026-04-20 시리즈 SW프로세스 V 모델과 사발 바닥의 밥풀까지 먹는 엔지니어링 2026-04-20 시리즈 SW프로세스 히타치의 QC-표준화 우유를 만드는 공장 2026-04-21 시리즈 SW프로세스 DevOps와 SRE 그리고 플랫폼 엔지니어링 2026-04-21 시리즈 SW프로세스 나선형 모델-그렌라간이 떠오르는 치밀한 모델 2026-04-21 시리즈 SW프로세스 린 개발방법론 2026-04-21 시리즈 SW프로세스 브룩스의 법칙 2026-04-21 시리즈 SW프로세스 애자일 방법론은 대체 뭘까 2026-04-21 시리즈 SW프로세스 콘웨이의 법칙과 역콘웨이 법칙"
+  },
+  {
+    "url": "https://gg582.github.io/cloud",
+    "title": "Cloud - 윤진의 IT 블로그",
+    "snippet": "총 3개의 게시물이 있습니다. 2025-05-09 원격 자동차 제어 시스템 2025-05-28 동적 프로비저닝을 구성해 보자-쿠버네티스(kubeADM) 2025-06-05 StatefulSet과 Deployment의 차이"
+  },
+  {
+    "url": "https://gg582.github.io/embedded",
+    "title": "Embedded - 윤진의 IT 블로그",
+    "snippet": "총 5개의 게시물이 있습니다. 2025-05-09 라즈베리파이 라즈봇 라즈베리파이 실습에 대한 개요 2025-05-09 STM32f769i-DISCOVERY에 대한 인상 기판을 선물받은 후 어떠한 작업을 했어야 했는가 2025-05-10 라즈봇 디바이스 드라이버 작성-모터편 1 IOCTL 기반 I2C 슬레이브 제어 드라이버 구현 2025-05-19 리눅스 I2C 슬레이브 디바이스 리눅스 커널에서 I2C 슬레이브 디바이스 이해하기 2025-06-06 리눅스 캐릭터 디바이스 작성 및 인터럽트 캐릭터 디바이스 드라이버 개발과 인터럽트 처리"
+  },
+  {
+    "url": "https://gg582.github.io/codingtest",
+    "title": "Coding Test - 윤진의 IT 블로그",
+    "snippet": "총 26개의 게시물이 있습니다. 2025-01-20 비트마스킹 비밀 지도-프로그래머스-레벨1 비트마스킹의 기초를 연습해 보자 2025-07-01 재귀 백트래킹 좋은수열-백준 2661번 재귀와 백트래킹을 활용한 수열 생성 문제 2025-08-08 재귀 하노이의 탑-프로그래머스-레벨 2 재귀 알고리즘을 활용한 하노이의 탑 문제 풀이 2026-01-15 다이내믹 내려가기-백준-2096번 동적 프로그래밍을 활용한 최적화 문제 풀이 2026-01-15 정렬 그리디 보석 도둑-백준-1202번 정렬과 그리디 알고리즘을 활용한 최적화 문제 2026-01-17 그래프 도넛과 막대 그래프-프로그래머스-레벨2 그래프 탐색을 활용한 그래프 유형 판별 문제 2026-01-18 그래프 가장-먼-노드-레벨3 BFS를 활용한 최단 거리 탐색 문제 2026-01-18 단조스택 Remove K Digits-LeetCode 단조 스택을 활용한 숫자 최소화 문제 2026-01-19 스택 문자열 Simplify Path-LeetCode 유사 유닉스 스타일의 문자열을 파싱하자 2026-01-19 플로이드워셜 분기문 Find the City with the Smallest Number of Neighbors at a Threshold Distance-LeetCode 플로이드-워셜 알고리즘과 조건 분기를 활용한 최단 경로 문제 2026-01-20 다익스트라 Network Delay Time-LeetCode 다익스트라 알고리즘을 이용하는 그래프 탐색의 기초 2026-01-20 문자열 신규 아이디 추천-프로그래머스-레벨1 C++로 제한된 환경에서 C 빌려오기 2026-01-21 그리디 사과 담기 게임-백준 2828번 보이는대로 구현하면 되는 트릭 없는 그리디 2026-01-21 스택 제로-백준 10773번 간단한 스택 문제를 연습하자 2026-01-21 큐 요세푸스 문제-백준 1158번 요세푸스 문제는 어떻게 하면 빨리 풀 수 있을까? 2026-01-22 정렬 최적화 C언어는 어디까지 최적화가 가능할까(백준 10825번) 백준 10825번과 함께하는 C언어 최적화 2026-01-22 시뮬레이션 스위치 켜고 끄기-백준 1244번 방심하지 말고 출력에 주의하자 2026-01-24 다익스트라 다익스트라 알고리즘을 외워 보자 중견 기업 코딩 테스트까지 노려 보자 2026-01-24 벨만포드 벨만포드 알고리즘을 외워 보자 코드 암기는 언제나 구조적으로 2026-01-25 다이내믹 정수 삼각형-백준 1932번 동적 프로그래밍에 그리디 알고리즘을 더해 보자. 2026-01-26 다이내믹 가장 긴 감소하는 부분 수열-백준 11053번 전형적인 DP, 가장 긴 감소하는 부분수열 2026-01-26 다이내믹 가장 긴 증가하는 부분 수열-백준 11053번 전형적인 DP, 가장 긴 증가하는 부분수열 2026-01-26 다이내믹 카드 구매하기-백준 11052번 실전 DP의 70% 정도 난이도 2026-01-26 이분탐색 나무 자르기-백준 2805번 이분탐색의 기초체력으 기르자 2026-01-26 다이내믹 가장 큰 증가하는 부분수열-백준 11055번 전형적인 DP, 가장 큰 증가하는 부분수열 2026-01-26 다이내믹 상자넣기-백준 1965번 전형적인 DP, 가장 긴 증가하는 부분수열"
+  },
+  {
+    "url": "https://gg582.github.io/%EB%B6%84%EB%A5%98/mathematics",
+    "title": "계산수학과 이산구조 - 윤진의 IT 블로그",
+    "snippet": "2026-08-01 중급 LU 분해를 산가지로 수행해 보자 가우스 소거와 기본행렬을 산가지 연산으로 따라가는 LU 분해 LU 분해 가우스 소거 기본행연산 기본행렬 상삼각행렬"
+  },
+  {
+    "url": "https://gg582.github.io/hobbies",
+    "title": "Hobbies - 윤진의 IT 블로그",
+    "snippet": "총 9개의 게시물이 있습니다. 2026-02-07 에티오피아 G1 산타웨네 니구세 게메다 내추럴, 모카 포트로 어떨까? 에티오피아 산타웨네 니구세 게메다 내추럴 원두 시음기 2026-02-07 KMZ 헬리오스 44, 보케보다 매력적인 풍경 촬영을 가진 렌즈 소문난 보케 뒤에 숨겨진 헬리오스 44의 묘사력 2026-02-07 블루스 포크 누구나 한 번쯤 겪는 아픈 이별, 블라인드 윌리 맥텔의 팔 오브 마인(Pal of Mine) 음악하는 아저씨의 멜랑꼴리 2026-02-07 파카 잉크 파카 61 컨버터형, 무슨 잉크까지 버틸까? 빈티지 만년필 파카 61과 잉크 호환성에 대한 고찰 2026-02-07 에피쿠로스 노자 공자 미시마 유키오 읽은 책들로 내 멋대로 판단해 보는 윤리 아타락시아로 알아보는 기술 윤리 2026-02-09 록 데스메탈 음악으로 얻어가는 삶의 용기 나에 갇혀 착각하지 않기 2026-02-09 록 포스트펑크 록스타로 알아보는 '왜 살아야 하는가' 록스타들의 삶을 통해 고찰해보는 존재의 의미 2026-02-17 록 포스트펑크 싸이키델릭 예고르 레토프의 바보에 대하여 예고르 레토프의 가사로 알아보는 풍전등화 2026-03-08 록 포스트펑크 철학 2024년 로만 네우모예프의 인터뷰 러시아어 인터뷰 번역"
+  },
+  {
+    "url": "https://religiya-serdtsa.github.io/docs/",
+    "title": "Religiya Serdtsa",
+    "snippet": "Religiya Serdtsa 기록과 생각을 차분하게 풀어내는 개인 블로그입니다. 카테고리 Software 개발 도구, UI/UX, 알고리즘, 'Punkware' 소개 5 포스트 → Post 블로그 운영 공지 3 포스트 → General 공지, 소개, 전체 블로그 안내 2 포스트 → Music 음악과 문화, 펑크부터 바로크까지 6 포스트 → Culture 세계의 좋은 취향과 문화들 5 포스트 →"
+  },
+  {
+    "url": "https://religiya-serdtsa.github.io/docs/category/software/",
+    "title": "Software – Religiya Serdtsa",
+    "snippet": "홈 / Software Software 개발 도구, UI/UX, 알고리즘, 'Punkware' 소개 5 posts 2026-03-10 · 2 min read Software 카테고리 소개 — 개발 도구·UI/UX·알고리즘·Punkware 개발 도구, UI/UX, 알고리즘, 'Punkware' 소개 Software Tools UI/UX Algorithm Punkware 2026-03-19 · 2 min read 자바의 추상 클래스는 때로 유지 보수 비용을 늘린다 자바에서 추상 클래스가 불러오는 부작용 Software Tools UI/UX Algorithm Java 2026-03-19 · 2 min read 그래도 이럴 땐 추상 클래스를 써야지 자바에서 추상 클래스를 쓰는 게 나은 상황은? Software Tools UI/UX Algorithm Java 2026-03-10 · 2 min read Punkware - 어떤 컨셉트인가요? 개발과 펑크 정신, 그리고 최소 구현체 Software Tools UI/UX Algorithm Punkware 2026-03-10 · 2 min read 우장춘의 삼각형에 비유해 알아보는 '좋은 취향' 개발 도구, UI/UX, 알고리즘, 'Punkware' 소개 Software Tools UI/UX Algorithm Punkware Anti-Philosophy Philosophy"
+  },
+  {
+    "url": "https://religiya-serdtsa.github.io/docs/category/post/",
+    "title": "Post – Religiya Serdtsa",
+    "snippet": "홈 / Post Post 블로그 운영 공지 3 posts 2026-03-10 · 2 min read 일반 포스트 포스트 운영 방침 Notice Operations Blog 2026-03-24 · 5 min read 국가는 목적이 아닌 도구이다 국가가 당신을 안전하게 해 주는 것이 아니다 Lifestyle Philosophy Anti-Philosophy 2026-03-24 · 2 min read 삶은 없고 사실이 있을 때 태도가 아닌 연속 Lifestyle Philosophy Anti-Philosophy"
+  },
+  {
+    "url": "https://religiya-serdtsa.github.io/docs/category/general/",
+    "title": "General – Religiya Serdtsa",
+    "snippet": "홈 / General General 공지, 소개, 전체 블로그 안내 2 posts 2026-03-10 · 3 min read 섹션 소개 소개 Welcome Guide Overview General 2026-05-01 이미지 첨부 테스트 마크다운에서 이미지를 첨부하는 방법을 테스트합니다. test image"
+  },
+  {
+    "url": "https://religiya-serdtsa.github.io/docs/category/culture/",
+    "title": "Culture – Religiya Serdtsa",
+    "snippet": "홈 / Culture Culture 세계의 좋은 취향과 문화들 5 posts 2025-03-10 · 3 min read Culture 카테고리 소개 — 세계의 좋은 취향과 문화들 세계의 좋은 취향과 문화들 Culture Lifestyle Art Travel Food 2025-03-10 · 3 min read 개발은 순수하게 대우받을 수 있는가 개발이 문화가 될 수 있을까? Culture Lifestyle Art Development Anti-Philosophy 2025-03-10 · 3 min read 러시아 펑크 록의 전설, 소셜 네트워크 게시물로 인해 '센터 E'에 소환되다 러시아 펑크 록의 전설 로만 네우모예프가 소셜 네트워크 게시물로 인해 소환된 사건을 분석합니다. Culture Music Russia Politics 2025-03-10 · 3 min read 유리 셰브추크, 콘서트를 정치적으로 검열한 데닌 전 주지사와의 소송에서 승리 러시아 록 뮤지션 유리 셰브추크가 브랸스크주 전 주지사와의 명예훼손 소송에서 승리하며 정치적 검열에 맞선 사례를 살펴봅니다. Culture Music Russia Politics 2025-03-10 · 3 min read 좋은 취향 담론과 무위자연의 한계 우리는 어떤 방향까지만 배워야 할까? Culture Lifestyle Art Development"
+  },
+  {
+    "url": "https://oborona.zip",
+    "title": "Posts (Оборона)",
+    "posts": [
+      "FreeDesktop 포맷을 Highlight.js에 추가하며 생각한 점 (gg582)",
+      "산학(算學): 가헌삼각을 첨타로 읽어 고차원 생성구조와 자기닮음까지 확장하기 (gg582)",
+      "산학(算學): 삼릉전 325개의 바깥층 개수(외주)를 구하는 두 가지 풀이 (gg582)",
+      "프레임워크 개발: CWIST의 최적화 및 비동기 전환기 (gg582)",
+      "산학(算學): Polygon Partitioning and Piled-Pile Sequences on an Equilateral Triangular Lattice (gg582)",
+      "산학(算學): 정삼각형 격자의 다각형 분할과 퇴타(退打) 수열 (gg582)",
+      "프레임워크 개발: 추상화는 왜 복잡한 계층과 구조를 숨기는가? CWIST의 cwist_app_use_https (gg582)",
+      "서양 수학(西算): 지수의 나눗셈 법칙 없이 0제곱을 증명하고, 어떤 구조에서 반복적으로 같은 개념이 나타나는지 보기 (gg582)",
+      "산학(算學): 가장자리만 자라는 눈송이의 넓이를 계산해 보자 (gg582)",
+      "산학(算學): 연분수 전개를 통한 유리함수의 극한 (gg582)",
+      "산학(算學): 가헌 삼각형(파스칼의 삼각형)과 이항정리표 (gg582)",
+      "산학(算學): 지수함수의 적분과 사다리꼴 구적법 - 구장산술의 방법론 (gg582)"
+    ]
+  }
+]

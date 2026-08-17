@@ -1,0 +1,395 @@
+[
+  {
+    "id": "CAT_ETHIOPIAN_BUNNA_IDEA",
+    "label": "Ethiopian Bunna Mafraat Archetype (분나 마프라트 원형 & 커피 문명 이데아론)",
+    "cat": "Foundation",
+    "level": 0,
+    "active": true,
+    "tau": "15th C ~ Present",
+    "geo": "Africa",
+    "lng": 38.7,
+    "lat": 9.0,
+    "desc": "에티오피아 분나 마프라트(Bunna Mafraat) 전통 의례를 커피 문명의 이데아(Idea)/원형으로 수립하고 현대 추출을 복제로 읽는 철학적 관점",
+    "details": [
+      "☕ 분나 마프라트(Bunna Mafraat, ቡနာ ማፍላት) 추출 의례: 프라이팬 생두 로스팅 -> 게베나(Jebena, ጀበና) 토기 주전자 직화 추출 -> 3단계 가창(Abol -> Tona -> Baraka) 음용 체계",
+      "🏛️ 커피 문명 이데아론(Platonic Coffee Archetype): 에티오피아 분나(Bunna)를 커피의 유일한 문명적 원형(Archetype)으로 수립",
+      "⚖️ 현대 파생 추출법의 불완전 복제론: 서구 에스프레소/드립/핸드드립을 에티오피아 원형의 파생적·불완전한 복제(Incomplete Copies)로 재해석",
+      "🔬 정밀 수율 추출을 통한 '문명적·정제된 커피'로의 정체성 복권: 원두 가열 동학, TDS 수율 정밀성 및 게베나 열용량 보정 방정식"
+    ]
+  },
+  {
+    "id": "CAT_WEST_AFRICAN_KORA",
+    "label": "West African Manding Kora Virtuosity (Diabaté Dynasty & Ballaké Sissoko)",
+    "cat": "Tradition",
+    "level": 1,
+    "active": true,
+    "tau": "13th C ~ Present",
+    "geo": "Africa",
+    "lng": -12.0,
+    "lat": 13.0,
+    "desc": "서아프리카 말리 21현 코라(Kora) 명인 디아바테 가문 & 발라케 시소코 실증 명곡 전체",
+    "details": [
+      "🎵 Toumani Diabaté & Ballaké Sissoko - 《New Ancient Strings (1999)》 앨범 전곡: <Bi Lambam>, <Salaman>, <Kita Kaira>, <Bafoulabe>, <Cheikhna Demba>, <Kora Bali>, <Kadiatou>, <Yamfa>",
+      "🎵 Toumani Diabaté - 《Kaira (1988)》 솔로 명반: <Kaira>, <Alla L'a Ke>, <Jarabi>, <Tubabu>",
+      "🎵 Toumani Diabaté & Ali Farka Touré - 《In the Heart of the Moon (2005)》: <Debe>, <Kala>, <Koulandian>",
+      "🎵 Ballaké Sissoko - 《Chamber Music (2009)》 & 《Musique de Nuit (2015)》: <Niabla>, <Halleluia>, <Futu>",
+      "🎵 Sidiki Diabaté & Djelimady Sissoko - 《Ancient Strings (1970)》 말리 아카이브 원본",
+      "🎵 Mamadou Diabaté - 《Be Tje Kora (2005)》: <Mana Mana>, <Dounuya>"
+    ]
+  },
+  {
+    "id": "CAT_SAHARA_TINARIWEN",
+    "label": "Tinariwen Tuareg Desert Blues (Tishoumaren)",
+    "cat": "Tradition",
+    "level": 2,
+    "active": true,
+    "tau": "1979 ~ Present",
+    "geo": "Africa",
+    "lng": 2.3,
+    "lat": 20.0,
+    "desc": "사하라 투아레그(Tuareg) 사막 블루스 전설 티나리웬(Tinariwen) 명반 및 명곡 아카이브",
+    "details": [
+      "🎵 Tinariwen 명반: 《The Radio Tisdas Sessions (2001)》, 《Amassakoul (2004)》, 《Aman Iman: Water Is Life (2007)》, Grammy 수상작 《Tassili (2011)》",
+      "🎵 Tinariwen 대표 명곡: <Sastanàqqàm>, <Tiwàyyen>, <Nànnuflày>, <Tamatant Tilay>, <Ténéré Tàqqàl>, <Imidiwan Takyadam>, <Erghad Afewo>, <Amidinim Ehaf Solan>",
+      "📻 사하라 투아레그(Tuareg) 일렉트릭 기타 & 전통 모달 리듬 Tishoumaren 디아스포라 광적 수용"
+    ]
+  },
+  {
+    "id": "CAT_AFRO_AMERICAN_RAGTIME_BLUES",
+    "label": "Afro-American Ragtime, Blues, Dancehall & Vinyl Collection",
+    "cat": "Tradition",
+    "level": 2,
+    "active": true,
+    "tau": "1895 ~ 1990s",
+    "geo": "Americas",
+    "lng": -88.0,
+    "lat": 35.0,
+    "desc": "아프리카 디아스포라 랙타임, 델타 블루스, 댄스홀 명곡 & 바이닐 컬렉션",
+    "details": [
+      "🎵 Scott Joplin 피아노 랙타임 명곡: <Maple Leaf Rag (1899)>, <The Entertainer (1902)>, <Solace: A Mexican Serenade (1909)>, <Bethena: A Concert Waltz (1905)>, <Peacherine Rag (1901)>",
+      "🎭 Scott Joplin 오페라 《Treemonisha (1911)》 전곡: <Overture>, <The Bag of Luck>, <Corn Huskers>, <A Real Slow Drag>",
+      "🎵 Early Delta Blues 명곡: Charley Patton - <High Water Everywhere>, <Pony Blues> / Blind Blake - <West Coast Blues>",
+      "🎵 80-90s Dancehall Reggae 명곡: Yellowman - <Zungguzungguguzungguzeng (1982)>, <Nobody Move Nobody Get Hurt> / Gregory Isaacs - <Night Nurse (1982)>, <Cool Ruler> / Purpleman - <Water Pumping (1982)>",
+      "📻 100+ 아날로그 바이닐 LP 컬렉션: Muddy Waters, Miles Davis, John Coltrane, B.B. King, Jimi Hendrix, Led Zeppelin, Chopin Nocturnes LP"
+    ]
+  },
+  {
+    "id": "CAT_KHMER_ROCK",
+    "label": "Khmer Golden Era Rock & Psychedelic Garage Pop (1960-70s)",
+    "cat": "Culture",
+    "level": 4,
+    "active": true,
+    "tau": "1960-70s",
+    "geo": "EastAsia",
+    "lng": 104.9,
+    "lat": 12.5,
+    "desc": "캄보디아 크메르 록 황금기 신 시사모우트 & 로스 세레이 소테아 전 명곡",
+    "details": [
+      "🎵 Sinn Sisamouth & Ros Serey Sothea 듀엣 명곡: <Kamlos Phnom Penh Kromom Battambang (프놈펜 청년과 바탐방 처녀)>, <Chnam Oun 16 (16세)>, <Sanya Bei Thngai (사흘간의 약속)>, <Chrot Srov (벼베기)>, <Kolas Indonesia (인도네시아 장미)>",
+      "🎵 Sinn Sisamouth 솔로 명곡: <Violon Sneha (사랑의 바이올린)>, <Champa Battambang>, <Mouy Roet Mey>",
+      "🎵 Ros Serey Sothea 솔로 퍼즈 록 명곡: <Jam 5 Khae Theat (Wait 5 More Months)>, <Chnam Dop Pram Muoy (I'm Sixteen)>, <Pha-em Klem Sraey>"
+    ]
+  },
+  {
+    "id": "CAT_SIBERIAN_PUNK",
+    "label": "Siberian Underground DIY Punk, Pakistan Rock & Throat Chanting",
+    "cat": "Culture",
+    "level": 4,
+    "active": true,
+    "tau": "1970-90s",
+    "geo": "CentralEurasia",
+    "lng": 65.0,
+    "lat": 55.0,
+    "desc": "시베리아 언더그라운드 펑크 명곡, 파키스탄 희귀 록 & 몽골 흐미",
+    "details": [
+      "🎵 Yegor Letov & Grazhdanskaya Oborona 명곡: <Моя оборона (My Defense)>, <Винтовка - это праздник (Rifle is a Holiday)>, <Русское поле экспериментов (Russian Field of Experiments)>, <Всё идет по плану (Everything Goes According to Plan)>",
+      "🎵 Yegor Letov 솔로/프로젝트 앨범: 《Русский полигон (1991)》, 《Прыг-скок (1990)》, 《Сто лет одиночества (1993)》",
+      "📻 Magnitizdat 자가복제 카세트테이프 지하 아카이브 (Инструкция по выживанию, Чёрный Лукич)",
+      "🎵 The Sound of Silhouettes (파키스탄 1970s 록밴드) 희귀 아날로그 바이닐 LP 앨범전곡",
+      "🎵 몽골/투바 흐미(Khoomei) 배음 가창 & 마두금: Huun-Huur-Tu - <Kongurei>, <Orphan's Lament> / Alash Ensemble 명곡"
+    ]
+  },
+  {
+    "id": "CAT_SPANISH_GUITAR",
+    "label": "Spanish Classical Guitar Canon, Alan Lomax Archives & Arctic Folk",
+    "cat": "Tradition",
+    "level": 1,
+    "active": true,
+    "tau": "16-20th C",
+    "geo": "Europe",
+    "lng": -4.0,
+    "lat": 40.0,
+    "desc": "타레가 클래식 기타 명곡, 로맥스 필드 믹스 & 그린란드 민요",
+    "details": [
+      "🎵 Francisco Tárrega 클래식 기타 명곡: <Recuerdos de la Alhambra (알람브라 궁전의 추억, 1896)>, <Capricho Árabe (아랍 풍류, 1892)>, <Lágrima (눈물)>, <Adelita>, <Gran Vals (그란 왈츠)>",
+      "📻 Alan Lomax Archive (1952 스페인 안달루시아 현지 음원): <Saeta de Sevilla>, <Cante Flamenco en Granada>, <Fandango de Huelva>",
+      "🎵 르네상스 류트 ~ 바로크 기타 명곡: Luys de Narváez - <Diferencias sobre Guárdame las vacas> / Gaspar Sanz - <Canarios>",
+      "🎵 Greenlandic Inuit Traditional: 《Qilaat (킬라아트)》 북춤 & 극지 민요 아카이브 음원"
+    ]
+  },
+  {
+    "id": "CAT_EAST_ASIA_MATH",
+    "label": "Joseon & East Asian Traditional Mathematics System",
+    "cat": "Tradition",
+    "level": 1,
+    "active": true,
+    "tau": "BCE ~ 18th C",
+    "geo": "EastAsia",
+    "lng": 124.0,
+    "lat": 37.0,
+    "desc": "구장산술, 최석정 라틴방진 & 산가지 현대 계산 실행",
+    "details": [
+      "📖 고대 동아시아 산학 원전: 《구장산술(九章算術)》 (방정장 연립일차방정식 직선 배열 연산 정독 & 수형 기하학)",
+      "📖 최석정(崔錫鼎) 《구수략(九數略, 1700)》: <구행구렬도(9차 직교 라틴방진)>, <270칸 낙서육고도(洛書六高圖)>, <변형 마방진>",
+      "📖 조선 산학 명저: 홍정하 《구일집(九一集)》, 경선징 《수학통(數學統)》, 이상혁 《익산(翼算)》",
+      "📖 중국 송·원 산서: 양휘 《양휘산법(楊輝算法)》, 주세걸 《산학계몽(算學啓蒙)》, 진구소 《수서구장(數書九章)》",
+      "💻 산가지(算木) 계산 물리 인터페이스: 가우스 소거법(Gaussian Elimination) & LU 분해 산가지 배열 연산 복원",
+      "💻 현대 구현체: C 언어 CWIST 연동 Z3 SMT Solver & SageMath 직교 방진 재실행"
+    ]
+  },
+  {
+    "id": "CAT_EAST_ASIA_PERFORMING",
+    "label": "Japanese Noh Theater, Hokusai Wave & Dialect Prosody",
+    "cat": "Culture",
+    "level": 1,
+    "active": true,
+    "tau": "14th C ~ Present",
+    "geo": "EastAsia",
+    "lng": 133.0,
+    "lat": 35.5,
+    "desc": "일본 노오 무극 《토모에》, 호쿠사이 파도 C++ 렌더링 & 성조 체계",
+    "details": [
+      "🎭 일본 전통 극음악 노오(能): 세아미(Zeami) 작 무극 《토모에(巴, Tomoe)》 (미나모토노 요시나카 & 토모에 고젠 서사 전곡)",
+      "🎨 가츠시카 호쿠사이(葛飾北齋) 《가나가와 오키 나미우라(神奈川沖浪裏)》 우키요에 분석",
+      "💻 C++ OpenGL/Software Renderer: 1800년대 에도만 기상 현상 & Draupner 이상파랑(Freak Wave) 유체 기하학 렌더링",
+      "🗣️ 중세 국어 성조 체계 (방점 平·上·去聲) & 대구 방언 H/M/L 고저 성조(Pitch Accent) 모델",
+      "💻 코딩 인터페이스: 방언 성조 운율 감각의 Syntax Highlighting 시각화 적용"
+    ]
+  },
+  {
+    "id": "CAT_BAROQUE_POLYPHONY",
+    "label": "European Baroque Counterpoint Canon & Alkan Virtuosity",
+    "cat": "Tradition",
+    "level": 1,
+    "active": true,
+    "tau": "17-19th C",
+    "geo": "Europe",
+    "lng": 10.0,
+    "lat": 52.0,
+    "desc": "북스테후데·바흐 바로크 대위법 & 알캉 피아노 기교",
+    "details": [
+      "🎵 Dieterich Buxtehude: 수난 성가 곡집 《Membra Jesu Nostri (BuxWV 75)》, 오르간 다성 대위법 《Passacaglia in D minor (BuxWV 161)》",
+      "🎵 J.S. Bach: 《푸가의 기법 (Die Kunst der Fuge BWV 1080)》, 《잘 조율된 건반 악기 집 (BWV 846-893)》",
+      "🎵 Charles-Valentin Alkan: 《단조에 의한 12개의 연습곡 (Op. 39)》 중 <피아노 솔로를 위한 협주곡 (Op. 39 No. 8-10)>, <Grande Sonate 'Les Quatre Âges' (Op. 33)>"
+    ]
+  },
+  {
+    "id": "CAT_UK82_PUNK",
+    "label": "UK82 Hardcore Street Punk & Classic Anarchism",
+    "cat": "Genre",
+    "level": 2,
+    "active": true,
+    "tau": "19th C ~ 1980s",
+    "geo": "Europe",
+    "lng": -2.5,
+    "lat": 51.5,
+    "desc": "영국 UK82 하드코어 펑크 명트랙 & 바쿠닌 아나키즘",
+    "details": [
+      "🎵 UK82 Street Punk 명트랙: Chaos UK - <Victims of a System>, <No Security> / The Exploited - <Army Life>, <Punks Not Dead> / Blitz - <Someone's Gonna Die>",
+      "📖 미하일 바쿠닌(Mikhail Bakunin) 서적: 《국가성과 아나키(Statism and Anarchy, 1873)》, 《하느님과 국가(God and the State)》",
+      "💻 Self-Sovereign VPS: 독립 노드 자율 서버 운영 & 펑크웨어(Punkware) 최소 구현체"
+    ]
+  },
+  {
+    "id": "CAT_MIDDLE_EAST_AFRICA_SCIENCE",
+    "label": "Islamic Mathematics & Solo Oud Maqam Mechanics",
+    "cat": "Foundation",
+    "level": 0,
+    "active": true,
+    "tau": "9th C ~ Modern",
+    "geo": "MiddleEast",
+    "lng": 44.0,
+    "lat": 25.0,
+    "desc": "알콰리즈미 알고리즘 & 오스만 우드 마캄 독주",
+    "details": [
+      "📖 알콰리즈미(Al-Khwarizmi) 서적: 《대수학(Al-Kitab al-jabr wa'l-muqabala)》 - 알고리즘(Algorithm)의 어원",
+      "🎵 Solo Oud Maqam (오직 우드 독주로만 연주되는 오스만 마캄): <Maqam Rast>, <Maqam Hijaz>, <Maqam Bayati>, <Maqam Nahawand> 독주 아카이브"
+    ]
+  },
+  {
+    "id": "CAT_SOFTWARE_SYSTEMS",
+    "label": "Bare-Metal C Systems Architecture & Open Source Infrastructure",
+    "cat": "Tech",
+    "level": 2,
+    "active": true,
+    "tau": "1970s ~ 2026",
+    "geo": "Americas",
+    "lng": -122.0,
+    "lat": 37.4,
+    "desc": "Bell Labs Unix/C, 커널 최적화 & 오픈소스 도구 체계",
+    "details": [
+      "📖 Bell Labs C/Unix 원전: Brian Kernighan & Dennis Ritchie 《The C Programming Language (K&R C)》 & POSIX/Linux Kernel Man Pages",
+      "💻 자작 C 웹엔진 & 도구: CWIST (C Web Infrastructure for Scalable Tasks), LibTTAK 메모리 얼로케이터, Nanox 텍스트 에디터 ($confirmshell, $makebackup 연동)",
+      "💻 Linux Kernel 최적화: io_uring 비동기 I/O, epoll C10k 리액터 루프 & SSH-Chatter 서버",
+      "💻 유니코드 & 엔코딩: UTF-8 가변 길이 인코딩 수리 구조 및 POSIX 시스템 콜"
+    ]
+  },
+  {
+    "id": "P01",
+    "label": "[Sink] Executable Joseon Math",
+    "cat": "PersonalSink",
+    "level": 5,
+    "active": true,
+    "tau": "2026",
+    "geo": "EastAsia",
+    "lng": 127.0,
+    "lat": 37.5,
+    "desc": "조선 산학 복원 및 라틴방진 재실행"
+  },
+  {
+    "id": "P02",
+    "label": "[Sink] C/Unix Bare-Metal Control",
+    "cat": "PersonalSink",
+    "level": 5,
+    "active": true,
+    "tau": "2026",
+    "geo": "EastAsia",
+    "lng": 127.0,
+    "lat": 37.5,
+    "desc": "C/Unix 기층 통제 및 CWIST"
+  },
+  {
+    "id": "P03",
+    "label": "[Sink] DIY Siberian/Khmer/Baroque Archiving",
+    "cat": "PersonalSink",
+    "level": 5,
+    "active": true,
+    "tau": "2026",
+    "geo": "EastAsia",
+    "lng": 127.0,
+    "lat": 37.5,
+    "desc": "시베리아/크메르 록 & 바로크 아카이빙"
+  },
+  {
+    "id": "P04",
+    "label": "[Sink] Self-Sovereign VPS Hosting",
+    "cat": "PersonalSink",
+    "level": 5,
+    "active": true,
+    "tau": "2026",
+    "geo": "EastAsia",
+    "lng": 127.0,
+    "lat": 37.5,
+    "desc": "Self-hosting 자율 서버 운영"
+  },
+  {
+    "id": "P05",
+    "label": "[Sink] Dialect Prosody in Highlighting",
+    "cat": "PersonalSink",
+    "level": 5,
+    "active": true,
+    "tau": "2026",
+    "geo": "EastAsia",
+    "lng": 127.0,
+    "lat": 37.5,
+    "desc": "방언 성조 운율 감각 렌더링"
+  },
+  {
+    "id": "P06",
+    "label": "[Sink] Ethiopian Bunna Archetype & Coffee Yield Science",
+    "cat": "PersonalSink",
+    "level": 5,
+    "active": true,
+    "tau": "2026",
+    "geo": "EastAsia",
+    "lng": 127.0,
+    "lat": 37.5,
+    "desc": "에티오피아 분나 마프라트 원형 복권 & 정제된 커피 수율 과학"
+  },
+  {
+    "id": "CAT_RYUKYU_OKINAWA_MINYO",
+    "label": "Okinawan Ryukyu Minyo & Sanshin Canon (류큐 민요 & 산신 전통)",
+    "cat": "Culture",
+    "level": 1,
+    "active": true,
+    "tau": "14th C ~ Present",
+    "geo": "EastAsia",
+    "lng": 127.6,
+    "lat": 26.2,
+    "desc": "오키나와 류큐 왕국 전통 3현 산신(三線) 민요(民謠) 및 카차시 전 음원 광적 섭식",
+    "details": [
+      "🎵 류큐 민요 대표 명곡: <Asadoya Yunta (아사도야 윤타)>, <Tinsagu nu Hana (틴사구의 꽃)>, <Toshin Doi (토신 도이)>, <Nakuni (나쿠니)>, <Kagiyadefuu (카기야데후)>, <Akata Shun Dunchi>, <Tsuki nu Kaisha>",
+      "🎵 류큐 산신 민요 거장: Rinsho Kadekaru (嘉手苅林昌) 전곡 아카이브, Seijin Noborikawa (登川誠仁), Shoukichi Kina (喜納昌吉), Misako Ohshiro (大城美佐子)",
+      "📻 오키나와 명반 박스셋: 《Okinawa Music ~ Memories and Records》 5-CD Box Set & 《Okinawa Minyo Daizenshu》 12-CD 전집"
+    ]
+  },
+  {
+    "id": "CAT_BRAZILIAN_BOSSA_NOVA",
+    "label": "Brazilian Bossa Nova & Antônio Carlos Jobim Complete Discography",
+    "cat": "Tradition",
+    "level": 2,
+    "active": true,
+    "tau": "1950s ~ Present",
+    "geo": "Americas",
+    "lng": -43.1,
+    "lat": -22.9,
+    "desc": "안토니우 카를로스 조빙(Antônio Carlos Jobim) 전곡 및 보사노바 거장 아카이브 전수 섭식",
+    "details": [
+      "🎵 Antônio Carlos Jobim 대표 명반 & 명곡 전곡: 《Wave (1967)》, 《Stone Flower (1970)》, 《Elis & Tom (1974)》, 《Jobim (1973)》, 명곡 <Garota de Ipanema (The Girl from Ipanema)>, <Desafinado>, <Águas de Março (March Waters)>, <Corcovado>, <Samba de Uma Nota Só (One Note Samba)>, <Chega de Saudade>",
+      "🎵 보사노바 핵심 거장 디스코그래피: João Gilberto (주앙 질베르투) - 《Chega de Saudade (1959)》 전곡, Vinícius de Moraes (비니시우스 디 모라이스), Astrud Gilberto (아스트루드 질베르투), Baden Powell (바덴 파월) 브라질 기타 모달리티",
+      "📻 리우데자네이루 싱코페이션 스윙 & 재즈 하모니의 완벽한 수용"
+    ]
+  },
+  {
+    "id": "CAT_ZIMBABWE_MBIRA",
+    "label": "Zimbabwean Shona Mbira dzaVadzimu (음비라 타악 탐색)",
+    "cat": "Tradition",
+    "level": 1,
+    "active": true,
+    "tau": "Traditional",
+    "geo": "Africa",
+    "lng": 31.0,
+    "lat": -17.8,
+    "desc": "짐바브웨 쇼나족 음비라(Mbira) 칼림바 타악 수치 입문 탐색 (3-4개 수수 청취)",
+    "details": [
+      "🎵 짐바브웨 쇼나족 음비라(Mbira dzaVadzimu) 타악 조상 교감 폴리리듬 3-4개 개요 탐색",
+      "🎵 Ephat Mujuru & Thomas Mapfumo 짐바브웨 아날로그 칼림바 타악 음향 입문"
+    ]
+  },
+  {
+    "id": "CAT_KOREAN_MINYO_PERCUSSION",
+    "label": "Korean Traditional Minyo & Pungmul Buk Drum Percussion (한국 민요 & 풍물 북 연주)",
+    "cat": "Tradition",
+    "level": 1,
+    "active": true,
+    "tau": "Joseon Era ~ Present",
+    "geo": "EastAsia",
+    "lng": 127.0,
+    "lat": 37.5,
+    "desc": "한국 전통 민요(경기/남도/서도/동부 민요) 광범위 청취 및 학창 시절 동아리 활동 기반 풍물 북(Buk) 장단 타악 신체화 경험",
+    "details": [
+      "🎵 한국 민요 영역별 명곡 섭식: 남도 민요 <육자배기>, <흥타령>, <진도아리랑> / 경기 민요 <창부타령>, <태평가>, <정선아리랑> / 서도 민요 <수심가>, <배따라기> / 동부 민요 <밀양아리랑>",
+      "🥁 풍물/사물놀이 북(Buk) 장단 타악 신체화: 학창 시절 동아리 활동을 통한 북 타악 실기 연주, 굿거리장단, 자진모리장단, 휘모리장단, 칠채 장단 몸 연주",
+      "🗣️ 판소리 및 고수(鼓手) 북 반주 동학: 일고수이명창(一鼓手二名唱) 북 타악 운율 및 장단 수리 구조 수용",
+      "💻 방언 성조 운율 및 농현/시김새 운율을 Syntax Highlighting 시각화 렌더링에 적용"
+    ]
+  },
+  {
+    "id": "CAT_NEW_YORK_SALSA_COLON_LAVOE",
+    "label": "Willie Colón & Héctor Lavoe Fania Salsa Brava Canon (뉴욕 샬사 브라바 거장)",
+    "cat": "Genre",
+    "level": 2,
+    "active": true,
+    "tau": "1967 ~ 1980s",
+    "geo": "Americas",
+    "lng": -73.98,
+    "lat": 40.75,
+    "desc": "뉴욕 파니아(Fania) 레이블의 트롬본 트럼펫 명인 Willie Colón & 불세출의 사르주엔토 보컬 Héctor Lavoe 샬사 브라바 전곡 광적 수용",
+    "details": [
+      "🎵 Willie Colón & Héctor Lavoe 파니아 레전드 명반 전곡: 《El Malo (1967)》, 《Cosa Nuestra (1969)》, 《La Gran Fuga (1971)》, 《Asalto Navideño (1971)》, 《El Juicio (1972)》, 《Lo Mato (1973)》, 《Vigilante (1983)》",
+      "🎵 Willie Colón & Héctor Lavoe 대표 명곡 섭식: <Che Che Colé>, <Aguanilé>, <El Día de Mi Suerte>, <Calle Luna, Calle Sol>, <Todo Tiene Su Final>, <La Murga>, <Juana Peña>, <Juanito Alimaña>",
+      "🎵 Héctor Lavoe 솔로 명작: 《Comedia (1978)》 앨범 및 보컬 시그니처 명곡 <El Cantante>, 《La Voz (1975)》, <El Todopoderoso>",
+      "📻 1970년대 뉴욕 푸에르토리코/라틴 디아스포라 브라스 샬사 브라바(Salsa Brava)의 완벽한 수용"
+    ]
+  }
+]
